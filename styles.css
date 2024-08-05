@@ -1,0 +1,105 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #556B2F; /* Verde musgo */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: #8B4513; /* Laranja escuro */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #fff;
+    font-family: 'Georgia', serif; /* Estilo diferente para o título */
+}
+
+.sub-header {
+    color: #fff;
+    font-size: 1.5em; /* Aumentar o tamanho da frase */
+}
+
+.infographic {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que os botões fiquem em uma linha */
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.step {
+    background-color: #FFA07A; /* Laranja claro */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    flex: 1;
+    min-width: 150px; /* Garantir que os botões fiquem em uma linha */
+    text-align: center;
+    font-weight: bold; /* Texto mais grosso */
+    font-size: 1.2em; /* Aumentar o tamanho do texto */
+}
+
+.step:hover {
+    background-color: #FF8C00; /* Cor ao passar o mouse */
+    cursor: pointer;
+}
+
+#info {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#info-image {
+    max-width: 80%; /* Imagens maiores */
+    height: auto;
+    border-radius: 8px;
+}
+
+#info-text {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.aba-conteudo {
+    margin-top: 20px;
+}
+
+.imagem-info {
+    text-align: center;
+}
+
+.imagem-info img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.imagem-info p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .infographic {
+        gap: 10px;
+    }
+
+    .step {
+        min-width: 200px; /* Ajuste fino para telas maiores */
+    }
+}
